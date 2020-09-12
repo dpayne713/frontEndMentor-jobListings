@@ -1,0 +1,21 @@
+{
+  "name": "static-job-listings-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Job Listings coding challenge](./design/desktop-preview.jpg)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassWatch": "sass --watch ./dev/style.scss ./public/css/style.css",
+    "nodemon" : "nodemon ./app.js localhost 3000", 
+    "start" : "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "sass": "^1.26.10",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

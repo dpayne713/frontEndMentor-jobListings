@@ -1,0 +1,298 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-family: "Libre Barcode 128 Text", cursive;
+  font-size: 40px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+.content {
+  width: 100vw;
+}
+
+.container {
+  width: 100vw;
+}
+
+.header-container {
+  background-image: url(./../images/bg-header-desktop.svg);
+  height: 15rem;
+  background-color: #5ba4a4;
+  position: relative;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.header__qualifications {
+  margin: 0 auto;
+  max-width: 110rem;
+  min-height: 7rem;
+  padding: 0.5rem;
+  background-color: white;
+  position: relative;
+  top: 15rem;
+  transform: translateY(-50%);
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 4rem #6666663d;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 800px) {
+  .header__qualifications {
+    max-width: 32rem;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+}
+.header__qualifications-form {
+  margin-left: auto;
+}
+.header__qualifications-type {
+  display: inline-block;
+  background-color: #eef6f6;
+  height: 2.8rem;
+  color: #5ba4a4;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin-left: 2rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 800px) {
+  .header__qualifications-type {
+    margin: 1rem 0 1rem 1rem;
+  }
+}
+.header__qualifications-type-btn {
+  display: inline-block;
+  height: 2.8rem;
+  background-color: #5ba4a4;
+  width: 3rem;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 0 0.5rem 0.5rem 0;
+  flex-shrink: 0;
+  transform: translateX(-0.3rem);
+}
+.header__qualifications-type-btn > i {
+  pointer-events: none;
+}
+.header__qualifications-type-btn:hover {
+  cursor: pointer;
+  background-color: black;
+}
+.header__qualifications-type-btn:active, .header__qualifications-type-btn:focus {
+  border: none;
+}
+.header__qualifications-clear {
+  cursor: pointer;
+  display: inline-block;
+  height: 3rem;
+  background-color: transparent;
+  color: #5ba4a4;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin: 1rem 1rem 1rem auto;
+  text-decoration: none;
+  border: none;
+}
+
+.jobListings-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #effafa;
+}
+
+.jobListings {
+  margin: 0 auto;
+  padding: 8rem 2rem;
+}
+.jobListings__listing {
+  max-width: 110rem;
+  height: 15rem;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 1rem 4rem #6666663d;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  transition: border 0.3s ease-in-out;
+}
+.jobListings__listing:hover {
+  border-left: 1rem solid #5ba4a4;
+}
+@media screen and (max-width: 800px) {
+  .jobListings__listing {
+    max-width: 32rem;
+    height: 25rem;
+    flex-direction: column;
+    padding: 0 1rem;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .jobListings__listing--image img {
+    height: 5rem;
+    width: 5rem;
+    transform: translate(1rem, -2.5rem);
+    position: relative;
+  }
+}
+.jobListings__listing--details {
+  margin-left: 2rem;
+  color: #7b8e8e;
+}
+@media screen and (max-width: 800px) {
+  .jobListings__listing--details {
+    margin-left: 1.5rem;
+  }
+}
+.jobListings__listing--details-company {
+  padding-bottom: 1.4rem;
+  position: relative;
+}
+.jobListings__listing--details-company-NAME {
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: inline-block;
+}
+.jobListings__listing--details-company-NEW {
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: white;
+  background-color: #5ba4a4;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  padding-bottom: 0.5rem;
+  vertical-align: baseline;
+  margin-left: 1rem;
+}
+.jobListings__listing--details-company-FEATURED {
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  padding-bottom: 0.5rem;
+  vertical-align: baseline;
+  margin-left: 1rem;
+}
+.jobListings__listing--details-job-NAME {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .jobListings__listing--details-job-NAME {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: normal;
+  }
+}
+.jobListings__listing--details-infoData {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 1rem 4rem 0 0;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  .jobListings__listing--details-infoData {
+    font-size: 1.3rem;
+    margin: 2rem 2rem 1rem 0;
+    font-weight: 500;
+  }
+}
+.jobListings__listing--details-infoData::after {
+  position: absolute;
+  content: ".";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 2.5rem;
+  transform: translate(2.5rem, -1.4rem);
+}
+@media screen and (max-width: 800px) {
+  .jobListings__listing--details-infoData::after {
+    transform: translate(1.5rem, -1.4rem);
+  }
+}
+.jobListings__listing--details-infoData:last-of-type::after {
+  content: "";
+}
+.jobListings__listing--qualifications {
+  margin: 0 0 0 auto;
+}
+@media screen and (max-width: 800px) {
+  .jobListings__listing--qualifications {
+    margin: 0 auto;
+    width: 27rem;
+    border-top: 1px solid #7b8e8e;
+  }
+}
+.jobListings__listing--qualifications-type {
+  display: inline-block;
+  background-color: #eef6f6;
+  height: 2.8rem;
+  color: #5ba4a4;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.8rem 1rem 1.2rem 1rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+@media screen and (max-width: 800px) {
+  .jobListings__listing--qualifications-type {
+    margin-top: 1.2rem;
+    margin-left: 0;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.7rem 1.1rem 2.3rem 1.1rem;
+    vertical-align: text-top;
+  }
+}
+.jobListings__listing--qualifications-type:hover {
+  cursor: pointer;
+  background-color: #5ba4a4;
+  color: white;
+}
+
+.invisible {
+  display: none;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

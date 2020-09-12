@@ -1,0 +1,345 @@
+$Desaturated-Dark-Cyan:             hsl(180, 29%, 50%);
+$Light-Grayish-Cyan-Background:     hsl(180, 52%, 96%);
+$Light-Grayish-Cyan-Filter-Tablets: hsl(180, 31%, 95%);
+$Dark-Grayish-Cyan:                 hsl(180, 8%, 52%);
+$Very-Dark-Grayish-Cyan:            hsl(180, 14%, 20%);
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit; 
+    margin: 0; 
+    padding: 0; 
+}
+
+html  {
+    box-sizing: border-box; 
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    box-sizing: border-box; 
+}
+
+.attribution { 
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size: 40px; text-align: center; 
+    & a {
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+    
+
+.content {
+    width: 100vw; 
+}
+
+.container {
+    width: 100vw; 
+}
+
+.header-container {
+    background-image: url(./../images/bg-header-desktop.svg);
+    height: 15rem; 
+    background-color: $Desaturated-Dark-Cyan;  
+    position: relative; 
+    padding: 0 2rem 2rem 2rem; 
+
+}
+
+  ////////////////////////////////////
+ //////////Header Qualifications/////
+////////////////////////////////////
+
+.header__qualifications {
+    margin: 0 auto; 
+    max-width: 110rem; 
+    min-height: 7rem; 
+    padding:.5rem; 
+    background-color: white;  
+    position: relative; 
+    top: 15rem; 
+    transform: translateY(-50%);
+    border-radius: .5rem; 
+    box-shadow: 0 1rem 4rem #6666663d; 
+
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and(max-width: 800px) {
+        max-width: 32rem;
+        padding: 2rem 1rem 1rem 1rem; 
+    }
+
+    &-form {
+        margin-left: auto;
+    }
+
+    &-type {
+        display: inline-block; 
+        background-color: $Light-Grayish-Cyan-Filter-Tablets; 
+        height: 2.8rem; 
+        color: $Desaturated-Dark-Cyan; 
+        font-size: 1.2rem; 
+        font-weight: 600; 
+        padding: 1rem; 
+        margin-left: 2rem;  
+        border-radius: .5rem 0 0 .5rem;
+        flex-shrink: 0;
+        @media screen and(max-width: 800px) {
+            margin: 1rem 0 1rem 1rem; 
+        }
+
+        &-btn {
+            display: inline-block; 
+            height: 2.8rem; 
+            background-color: $Desaturated-Dark-Cyan; 
+            width: 3rem; 
+            border: none; 
+            font-size: 1.5rem; 
+            color: white; 
+            border-radius: 0 .5rem .5rem 0;
+            flex-shrink: 0;
+            transform: translateX(-.3rem);
+
+            & > i {
+                pointer-events: none; 
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: black; 
+            }
+            &:active, &:focus {
+                border: none; 
+            }
+        }
+    }
+    &-clear {
+        cursor: pointer;
+        display: inline-block; 
+        height: 3rem; 
+        background-color: transparent; 
+        color: $Desaturated-Dark-Cyan; 
+        font-size: 1.4rem; 
+        font-weight: 600; 
+        padding: 1rem; 
+        margin:  1rem 1rem 1rem auto ; 
+        text-decoration: none; 
+        border: none; 
+        
+    }
+}
+
+
+  ////////////////////////////////////
+ //////////LISTINGS//////////////////
+////////////////////////////////////
+
+
+.jobListings-container {
+    width: 100vw;
+    min-height: 100vh;
+ 
+    background-color: $Light-Grayish-Cyan-Background; 
+}
+.jobListings {
+
+    margin: 0 auto ; 
+    padding: 8rem 2rem; 
+
+
+
+    &__listing {
+        max-width: 110rem; 
+        height: 15rem; 
+        padding: 2rem 4rem; 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white; 
+        box-shadow: 0 1rem 4rem #6666663d; 
+        margin: 2rem auto; 
+        border-radius: 1rem; 
+        transition: border .3s ease-in-out;
+
+        &:hover  {
+            border-left: 1rem solid $Desaturated-Dark-Cyan; 
+        }
+
+        @media screen and(max-width: 800px) {
+            max-width: 32rem;
+            height: 25rem; 
+            flex-direction: column; 
+            padding: 0 1rem; 
+            align-items: flex-start;
+            margin-bottom: 4rem; 
+        }
+
+        &--image img {
+            @media screen and(max-width: 800px) {
+                height: 5rem; 
+                width: 5rem; 
+                transform: translate(1rem, -2.5rem);
+                position: relative;
+            }
+        }
+        
+        &--details {
+            margin-left: 2rem; 
+            color: $Dark-Grayish-Cyan; 
+
+            @media screen and(max-width: 800px) {
+                margin-left: 1.5rem; 
+            }
+
+            &-company {
+                padding-bottom: 1.4rem; 
+                position: relative; 
+                
+                &-NAME {
+                    font-size: 1.3rem; 
+                    font-weight: 600; 
+                    display: inline-block;
+
+
+                }
+                &-NEW {
+                    display: inline-block; 
+                    font-size: 1.05rem;
+                    font-weight: 600;  
+                    color: white; 
+                    background-color: $Desaturated-Dark-Cyan; 
+                    border-radius: 2rem; 
+                    padding: .8rem; 
+                    padding-bottom: .5rem; 
+                    vertical-align:baseline;
+                    margin-left: 1rem;
+                    
+                    
+                }
+                &-FEATURED {
+                    display: inline-block; 
+                    font-size: 1.05rem; 
+                    font-weight: 600; 
+                    
+                    color: white; 
+                    background-color: black; 
+                    border-radius: 2rem; 
+                    padding: .8rem; 
+                    padding-bottom: .5rem; 
+                    vertical-align: baseline;; 
+                    margin-left: 1rem; 
+                }
+            }
+
+            &-job {
+
+                &-NAME {
+                    font-size: 1.8rem; 
+                    letter-spacing: .1rem;
+                    font-weight: 500; 
+                    @media screen and(max-width: 800px) {
+                        color: black; 
+                        font-size: 1.5rem; 
+                        font-weight: 600;
+                        letter-spacing: normal; 
+                    }
+                }
+            }
+
+            &-infoData {
+                display: inline-block; 
+                font-size: 1.4rem; 
+                margin: 1rem 4rem 0 0; 
+                position: relative; 
+
+                @media screen and(max-width: 800px) {
+                    font-size: 1.3rem; 
+                    margin: 2rem 2rem 1rem 0; 
+                    font-weight: 500; 
+                    
+                }
+
+                &::after {
+                    position: absolute; 
+                    content : '.';
+                    top: 0; 
+                    right: 0; 
+                    bottom: 0; 
+                    font-size: 2.5rem; 
+                    transform: translate(2.5rem, -1.4rem);
+
+                    @media screen and(max-width: 800px) {
+                        transform: translate(1.5rem, -1.4rem);
+                    }
+
+                }
+                &:last-of-type::after {
+                    content : '';
+                }
+
+                
+            }  
+        }
+        &--qualifications {
+            margin: 0 0 0 auto; 
+
+            @media screen and(max-width: 800px) {
+                margin: 0 auto; 
+                width: 27rem; 
+                 
+
+                border-top: 1px solid $Dark-Grayish-Cyan; 
+            }
+
+
+
+            &-type {
+                display: inline-block; 
+                background-color: $Light-Grayish-Cyan-Filter-Tablets; 
+                height: 2.8rem; 
+                color: $Desaturated-Dark-Cyan; 
+                font-size: 1.2rem; 
+                font-weight: 600; 
+                padding: .8rem 1rem 1.2rem 1rem; 
+                margin-left: 1rem;  
+                border-radius: .5rem;
+                border: none; 
+
+                @media screen and(max-width: 800px) {
+                    margin-top: 1.2rem; 
+                    margin-left: 0; 
+                    margin-right: 1rem; 
+                    font-size: 1.5rem; 
+                    font-weight: 500; 
+                    padding: .7rem 1.1rem 2.3rem 1.1rem; 
+                    vertical-align: text-top;
+                }
+                
+                &:hover {
+                   cursor: pointer; 
+                   background-color: $Desaturated-Dark-Cyan;
+                   color: white; 
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.invisible {
+    display: none; 
+    height: 0; 
+    width: 0; 
+    visibility: hidden;
+}
+
+

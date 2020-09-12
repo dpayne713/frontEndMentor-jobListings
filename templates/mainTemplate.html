@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Job Listings</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ea7a226074.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="content">
+
+    <div class="container">
+      
+      <div class="header-container">
+        
+          <div class="header__qualifications">
+            <form class="header__qualifications-form" action="/clear" method="get">
+
+
+
+              <!-- <span class="header__qualifications-type role-frontEnd visible">Frontend</span>
+              <button name="role" value="Frontend" type="submit" class="header__qualifications-type-btn"><i class="fas fa-times"></i></button>
+              -->
+
+              <button class="header__qualifications-clear invisible">Clear</button>
+            </form>
+          </div>
+        
+        
+          
+      </div> <!--header-container-->
+
+    <div class="jobListings-container">
+        <div class="jobListings">
+
+          {%jobListings%}
+      <!-- SAMPLE JOB LISTING - JOB LISTINGS DYNAMICALLY ADDED 
+
+            <div class="jobListings__listing">
+              <div class="jobListings__listing--image">
+                <img src="./images/photosnap.svg" alt="" class="jobListings__listing--image-img">
+              </div>
+              <div class="jobListings__listing--details">
+                <div class="jobListings__listing--details-company">
+                  <h3 class="jobListings__listing--details-company-NAME">Photosnap</h3>
+                  <span class="jobListings__listing--details-company-NEW visible">NEW!</span>
+                  <span class="jobListings__listing--details-company-FEATURED visible">FEATURED</span>
+                </div>
+                <div class="jobListings__listing--details-job">
+                  <h2 class="jobListings__listing--details-job-NAME">Senior Frontend Developer</h2>
+                </div>
+                <div class="jobListings__listing--details-info">
+                  <span class="jobListings__listing--details-infoData">1d ago</span>
+                  <span class="jobListings__listing--details-infoData">Full Time</span>
+                  <span class="jobListings__listing--details-infoData">USA only</span>
+                </div>
+              </div>  
+              <div class="jobListings__listing--qualifications">
+                <button class="jobListings__listing--qualifications-type qualifications-ROLE visible">Frontend</button>
+                <button class="jobListings__listing--qualifications-type qualifications-LEVEL visible">Senior</button>
+                <button class="jobListings__listing--qualifications-type qualifications-language visible">HTML</button>
+                <button class="jobListings__listing--qualifications-type qualifications-language visible">CSS</button>
+                <button class="jobListings__listing--qualifications-type qualifications-language visible">JavaScript</button>
+              </div>
+            </div> -->
+        
+        </div> 
+      </div> <!--jobListings-container-->
+      
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/dpayne713">David Payne</a>.
+      </div>
+
+    </div> <!-- container -->
+  </div>
+
+    <script src="./scripts/script.js"></script>
+
+</body>
+</html>
