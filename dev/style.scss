@@ -15,6 +15,14 @@ $Very-Dark-Grayish-Cyan:            hsl(180, 14%, 20%);
 html  {
     box-sizing: border-box; 
     font-size: 62.5%; 
+
+    @media screen and (max-width : 900px) {
+            font-size: 55%; 
+    }
+    @media screen and (max-width : 800px) {
+        font-size: 62.5%; 
+    }
+
 }
 
 body {
@@ -341,5 +349,4 @@ body {
     width: 0; 
     visibility: hidden;
 }
-
 
