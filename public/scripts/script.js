@@ -8,7 +8,7 @@ const doc = {
     headerQuery : document.querySelector('.header__qualifications'),
     jobListings : document.querySelector('.jobListings'),
     jobCards: document.querySelectorAll('.jobListings__listing'),
-    clearBtn : document.querySelector('.header__qualifications-clear')
+    clearBtn : document.querySelector('.header__qualifications-clear'),
 }
 
 let selected = {
@@ -24,10 +24,12 @@ let selected = {
 doc.jobListings.addEventListener('click', event => {
 
     
+    
     if (event.target.className ==='jobListings__listing--qualifications-type') {
-
+        
         //put clear button on screen
-        doc.clearBtn.classList.remove('invisible')
+        doc.headerQuery.classList.remove('invisible');
+        doc.clearBtn.classList.remove('invisible');
 
         //check if it's already selected
         if (!(selected[event.target.name].find(el => el===event.target.value))) {
@@ -75,6 +77,10 @@ doc.headerQuery.addEventListener('click', event => {
     let node = document.querySelector(`#${val}`);
     node.parentNode.removeChild(node);
     
-    if (selected.all().length <1 ) doc.clearBtn.classList.add('invisible'); 
+    if (selected.all().length <1 ) {
+        doc.clearBtn.classList.add('invisible');
+        doc.headerQuery.classList.add('invisible');
+    } 
+
     
 }); 

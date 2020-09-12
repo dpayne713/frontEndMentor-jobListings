@@ -243,9 +243,9 @@ body {
                 &-NAME {
                     font-size: 1.8rem; 
                     letter-spacing: .1rem;
-                    font-weight: 500; 
+                    font-weight: 600; 
+                    color: black; 
                     @media screen and(max-width: 800px) {
-                        color: black; 
                         font-size: 1.5rem; 
                         font-weight: 600;
                         letter-spacing: normal; 

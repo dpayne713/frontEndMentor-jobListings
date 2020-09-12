@@ -209,11 +209,11 @@ body {
 .jobListings__listing--details-job-NAME {
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
-  font-weight: 500;
+  font-weight: 600;
+  color: black;
 }
 @media screen and (max-width: 800px) {
   .jobListings__listing--details-job-NAME {
-    color: black;
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: normal;
